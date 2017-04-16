@@ -1,0 +1,8 @@
+mkdir -p ~/.ssh
+echo '# keys@chenzhiwei' >> ~/.ssh/authorized_keys
+if [ curl --version &>/dev/null ]; then
+    curl -sS -L https://github.com/chenzhiwei.keys >> ~/.ssh/authorized_keys
+else
+    wget -q -O - https://github.com/chenzhiwei.keys >> ~/.ssh/authorized_keys
+fi
+echo '# keys@chenzhiwei' >> ~/.ssh/authorized_keys
