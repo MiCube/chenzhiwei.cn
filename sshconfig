@@ -1,0 +1,6 @@
+mkdir -p ~/.ssh
+if curl --version &>/dev/null; then
+    curl -sSL https://github.com/chenzhiwei/home/raw/master/.ssh/config > ~/.ssh/config
+else
+    wget -q -O - https://github.com/chenzhiwei/home/raw/master/.ssh/config > ~/.ssh/config
+fi
