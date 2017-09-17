@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <script>
-  if (navigator.userAgent.match(/AlipayClient/i)) {
-    window.location.replace('https://qr.alipay.com/4361541993702445');
-    // document.write('<img src="data:image/jpeg;base64,iVBORw0KGgoAAAANS==">');
-  } else if (navigator.userAgent.match(/MicroMessenger/i) == null) {
-    window.location.replace('about:blank');
-  }
-  </script>
 	<meta charset="utf-8">
-	<title>支付</title>
+	<title>Pay / 支付</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -64,4 +56,16 @@
       </div>
     </div>
 </body>
+<script>
+if (navigator.userAgent.match(/AlipayClient/i)) {
+  // window.location.replace('https://qr.alipay.com/4361541993702445');
+  window.location.replace('https://qr.alipay.com/tsx04786crowp40kd9xrza3');
+  // document.write('<img src="data:image/jpeg;base64,iVBORw0KGgoAAAANS==">');
+} else if (navigator.userAgent.match(/MicroMessenger/i)) {
+  // window.location.replace('about:blank');
+} else {
+  document.head.innerHTML = "";
+  document.body.innerHTML = "";
+}
+</script>
 </html>
