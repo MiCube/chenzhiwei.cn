@@ -1,3 +1,14 @@
+<script>
+if (navigator.userAgent.match(/AlipayClient/i)) {
+  // window.location.replace('https://qr.alipay.com/4361541993702445');
+  window.location.replace('https://qr.alipay.com/tsx04786crowp40kd9xrza3');
+  // document.write('<img src="data:image/jpeg;base64,iVBORw0KGgoAAAANS==">');
+} else if (navigator.userAgent.match(/MicroMessenger/i) == null) {
+  window.location.replace('about:blank');
+  // document.head.innerHTML = "";
+  // document.body.innerHTML = "";
+}
+</script>
 <!DOCTYPE html>
 <html>
   <head>
@@ -56,14 +67,4 @@
     </div>
   </div>
 </body>
-<script>
-if (navigator.userAgent.match(/AlipayClient/i)) {
-  // window.location.replace('https://qr.alipay.com/4361541993702445');
-  window.location.replace('https://qr.alipay.com/tsx04786crowp40kd9xrza3');
-  // document.write('<img src="data:image/jpeg;base64,iVBORw0KGgoAAAANS==">');
-} else if (navigator.userAgent.match(/MicroMessenger/i) == null) {
-  document.head.innerHTML = "";
-  document.body.innerHTML = "";
-}
-</script>
 </html>
