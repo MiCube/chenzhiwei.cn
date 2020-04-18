@@ -12,11 +12,13 @@
     branch  = auto
     interactive = auto
 [alias]
-    co  = checkout
-    ci  = commit
     st  = status
     last = log -1 HEAD
     unstage = reset HEAD --
     history = log -p --
 [push]
     default = simple
+[credential]
+    helper = store
+# [http]
+#    proxy = http://localhost:7980
