@@ -16,6 +16,8 @@
     last = log -1 HEAD
     unstage = reset HEAD --
     history = log -p --
+[pull]
+	ff = only
 [push]
     default = simple
 [credential]
