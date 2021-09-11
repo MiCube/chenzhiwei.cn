@@ -19,8 +19,10 @@
 [pull]
 	ff = only
 [push]
-    default = simple
+    default = current
 [credential]
     helper = store
 # [http]
 #    proxy = http://localhost:7980
+[init]
+	defaultBranch = master
